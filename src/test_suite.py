@@ -27,7 +27,7 @@ def run_tests():
 
     print("Test one passed grid center is correct")
 
-    #test 2: Uniform temperature check
+    #test 2: Uniform temperature check 
     temps_uniform = DATASETS["uniform_cold"]
     (X,Y,X,V_uniform), _ = system.get_visuals(temps_uniform,grid_size=5)
 
