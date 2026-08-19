@@ -1,3 +1,8 @@
+"""
+Main execution module for freezer simulation 
+Generates 2D and 3D visual heat Maps
+"""
+
 import matplotlib.pyplot as plt
 from Logic import TrilinearMath
 from Interface import FreezerSystem
@@ -27,7 +32,7 @@ def main():
     ax1 = fig.add_subplot(1,2,1)
     im1 = ax1.imshow(grid_2D, cmap='RdYlBu_r', origin='lower', extent = [0,1,0,1])
     plt.colorbar(im1,ax=ax1,label='Temperature (Celcius)')
-    ax1.set_title("2D Heat Map (Middle slize: z= 0.5)")
+    ax1.set_title("2D Heat Map (Middle slice: z= 0.5)")
     ax1.set_xlabel("Width")
     ax1.set_ylabel("Depth")
 

@@ -5,9 +5,10 @@ Manages data flow between sensors, math engines, 2D spatial slicing, and statisi
 import numpy as np
 from Logic import FreezerMathBase
 
+
 class FreezerSystem:
     def __init__(self, math_engine,grid_size=15):
-        self.engine = math_engine
+        self.engine = math_engine #resolution of grid
         self.grid_size = grid_size
     
 
@@ -19,7 +20,7 @@ class FreezerSystem:
     def get_visuals(self,sensor_data,grid_size=None,z_slice = 0.5):
         """
         computes 3D volume and extracts 2D slice
-        Uses instance grid size id none provided
+        Uses instance grid size if none provided
         """
         if grid_size is None:
             grid_size = self.grid_size
