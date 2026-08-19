@@ -8,7 +8,7 @@ from Logic import TrilinearMath
 from Interface import FreezerSystem
 
 """
-bottom front left,bottom front right, bottom back left, bottom back right, top front left, top front right, top back left, top back right
+bottom front left, bottom front right, bottom back left, bottom back right, top front left, top front right, top back left, top back right
 """
 DATASETS = {
     "Normal_freezer": [-20,-17,-16,-15,-23,-21,-19,-14],
